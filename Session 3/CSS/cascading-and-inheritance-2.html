@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Cascading and Inheritance 2
+    </title>
+</head>
+<body>
+
+    <style type="text/css">
+    .main {
+        color: rebeccapurple;
+        border: 2px solid #ccc;
+        padding: 1em;
+    }
+
+    .special {
+        color: black;
+        font-weight: bold;
+    }
+
+    body {
+        color: green;
+    }
+              
+    .my-class-1 a {
+        color: inherit;
+    }
+              
+    .my-class-2 a {
+        color: initial;
+    }
+              
+    .my-class-3 a {
+        color: unset;
+    }
+
+        blockquote {
+        background-color: red;
+        border: 2px solid green;
+    }
+            
+    .fix-this {
+        all: unset;
+    }
+        
+        
+    </style>
+
+<h1>First Example</h1>
+    <ul class="main">
+        <li>Item One</li>
+        <li>Item Two
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+            </ul>
+        </li>
+        <li>Item Three
+            <ul class="special">
+                <li>3.1
+                    <ul>
+                        <li>3.1.1</li>
+                        <li>3.1.2</li>
+                    </ul>
+                </li>
+                <li>3.2</li>
+            </ul>
+        </li>
+    </ul>
+<h1>Second Example</h1>
+        <ul>
+        <li>Default <a href="#">link</a> color</li>
+        <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+        <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+        <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+    </ul>
+
+<h1>Third Example</h1>
+        <blockquote>
+            <p>This blockquote is styled</p>
+        </blockquote>
+
+        <blockquote class="fix-this">
+            <p>This blockquote is not styled</p>
+        </blockquote>
+        
+
+</body>
+</html>

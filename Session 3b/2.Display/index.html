@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display Property</title>
+  </head>
+
+  <style>
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .wrapper > div {
+      background-color: greenyellow;
+      padding: 1rem;
+      flex: 1 100px;
+    }
+
+    .box1 {
+      align-self: center;
+      order: 1;
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <div class="box1">One</div>
+      <div class="box2">Two</div>
+      <div class="box3">Three Four Five</div>
+    </div>
+  </body>
+</html>

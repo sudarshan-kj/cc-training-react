@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Advanced Text Formatting
+	</title>
+</head>
+<body>
+
+	<style>
+
+	body{
+		padding: 3rem;
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		margin-top: 4rem;
+
+	}
+</style>
+
+
+<h3>Blockquote</h3>
+<section>
+	<p>Here below is a blockquote...</p>
+	<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+		<p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+		Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+	</blockquote>
+</section>
+
+<h3>Abbrevations</h3>
+<section>
+	<p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+	<p><abbr title="United States of America">USA</abbr> is a hyped country.</p>
+</section>
+
+<h3>Address</h3>
+<section>
+	<address>
+	  <p>Sudarshan K J, Upkar Layout, Bengaluru, India</p>
+	</address>
+</section>
+
+<h3>Superscript and Subscript</h3>
+<section>
+	<p>Buddha Day is celebrated on April 8<sup>th</sup> in Hawaii</p>
+	<p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+	<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+</section>
+
+
+<h3>Representing computer code</h3>
+<section>
+	<pre><code>var para = document.querySelector('p');
+
+	para.onclick = function() {
+	  alert('Owww, stop poking me!');
+	}</code></pre>
+
+	<p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+
+	<p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+
+	<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+	<pre>$ <kbd>ping mozilla.org</kbd>
+	<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+	64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+</section>
+
+
+<h3>Demarcating Edits</h3>
+<section>
+	<p>My favorite color is <del>green</del> <ins>black</ins>!</p>
+</section>
+
+
+<h3>Feeding in Times</h3>
+<section>
+	<time datetime="2016-01-20">20 January 2016</time>
+	<time datetime="2016-01">January 2016</time>
+	<time datetime="01-20">20 January</time>
+	<time datetime="19:30">19:30</time>
+	<time datetime="19:30:01.856">19:30:01.856</time>
+	<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+	<time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+	<time datetime="2016-W04">The fourth week of 2016</time>
+</section>
+
+<h2>Details element</h2>
+<section>
+	<details>
+	  <summary>Epcot Center</summary>
+	  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+	</details>
+</section>
+
+
+</body>
+</html>

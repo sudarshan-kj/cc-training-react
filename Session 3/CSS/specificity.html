@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+       CSS Specificity
+    </title>
+</head>
+<body>
+
+    
+<!-- Add a class selector here -->
+    <style type="text/css">
+
+        body {
+            padding: 3rem;
+        }
+
+        .green-color {
+            color:  green;
+        }
+
+        p {
+          color: blue;
+        }
+
+        p {
+          color: red;
+        }
+    </style>
+
+    <h1>I am a level one heading</h1>
+
+    <p>This is a paragraph of text. In the text is a <span>span element</span> 
+    and also a <a href="http://example.com">link</a>.</p>
+
+    <p class="green-color">This is the second paragraph. It contains an <em>emphasized</em> element.</p>
+
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item <em>three</em></li>
+    </ul>
+
+</body>
+</html>
