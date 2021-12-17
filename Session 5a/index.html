@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Static positioning</title>
+    <script src="script.js" defer></script>
 
     <style>
       body {
         width: 500px;
         margin: 0 auto;
+        height: 2000px;
       }
 
       p {
@@ -17,14 +19,12 @@
         margin: 10px;
       }
 
-      span {
-        background: red;
-        border: 1px solid black;
+      .positioned {
+        background: yellow;
       }
 
-      .positioned {
-        position: static;
-        background: yellow;
+      span::first-letter {
+        color: greenyellow;
       }
     </style>
   </head>
@@ -35,8 +35,12 @@
       I am a basic block level element. My adjacent block level elements sit on
       new lines below me.
     </p>
+    <span
+      >Whatever content you write Whatever content you write Whatever content
+      you write Whatever content you write
+    </span>
 
-    <p class="positioned">
+    <p class="positioned" id="para2">
       By default we span 100% of the width of our parent element, and our are as
       tall as our child content. Our total width and height is our content +
       padding + border width/height.
@@ -56,5 +60,7 @@
       >, or just go on to a new line if not, much like this image will do:
       <img src="long.jpg" />
     </p>
+
+    <button>Click me!</button>
   </body>
 </html>
